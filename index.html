@@ -20,9 +20,13 @@ h1 {
 }
 h1:hover {
     background-color: lime;
-    box-shadow: 3px 3px black;
+    cursor: pointer;
+    box-shadow: 5px 5px black;
+    transition: background-color .5s ease-out, box-shadow .5s ease-out;
+
 }
 body {
+    background-color: lightcyan;
     opacity: 1;
     transition: 1.5s opacity;
 }
@@ -30,7 +34,29 @@ body.fade-out {
     opacity: 0;
     transition: 1s opacity;
 }
+
+img {
+  box-shadow: 10px 10px black;
+}
+
+img:hover {
+  box-shadow: 10px 10px magenta;
+  -webkit-filter: invert(1);
+  filter: invert(1);
+  transition: background-color .5s ease-out, box-shadow .5s ease-out, filter .5s ease-out;
+}
+
+.floating-box {
+    display: inline-block;
+    width: 150px;
+    height: 75px;
+    margin: 10px;
+    border: 3px solid #73AD21;  
+}
+
 .flex-container {
+    max-width:1000px;
+    margin: auto;
     display: -webkit-flex;
     display: flex;  
     -webkit-flex-flow: row wrap;
@@ -45,8 +71,6 @@ body.fade-out {
 }
 
 .nav ul {
-    position: relative;
-    top: 0px;
     transform: translateY(-30%);
     font-family: Times New Roman, serif;
     font-size: 32px;
@@ -63,9 +87,12 @@ body.fade-out {
     text-decoration: underline;
 }
 .footer {
-    position:absolute;
-    bottom:0;
-    width:100%;
+    max-width:1000px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
     font-size: 10px;
 }
 
@@ -101,19 +128,25 @@ $(function() {
 </script>
 <div class="flex-container">
 <header>
-  <h1><a style="text-decoration: none; color:White;" href="/">a.</a></h1>
+  <h1>
+    <a href="/" style="text-decoration: none; color:White;" onmouseover="document.getElementById('homeImg').src='./skyline.gif'">a.</a>
+  </h1>
 </header>
 
 <nav class="nav">
 <ul>
-  <li><a href="CV">CV</a></li>
-  <li><a href="/">projects</a></li>
-  <li><a href="blog">blog</a></li>
+  <li><a href="CV" onmouseover="document.getElementById('homeImg').src='./cv.jpg'">CV</a></li>
+  <li><a href="/" onmouseover="document.getElementById('homeImg').src='./projects.jpg'">projects</a></li>
+  <li><a href="blog" onmouseover="document.getElementById('homeImg').src='./blog.jpg'">blog</a></li>
 </ul>
 </nav>
 
 <article class="article">
-  <img src="./main.jpg" alt="homepic"width="600">
+  <p style="padding-bottom: 400px;">
+    <a href="/">
+      <img id="homeImg" src="./skyline.gif" alt="mainprofile" width="75%">
+    </a>
+  </p>
 </article>
 
 <footer class="footer">&copy; 2017 Arwin Chan</footer>
