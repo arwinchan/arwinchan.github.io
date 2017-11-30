@@ -63,6 +63,11 @@ body.fade-out {
   opacity: 0;
   transition: 1s opacity;
 }
+figcaption {
+  margin-top: 0px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
 .floating-box {
   margin-top: 0px;
   min-width: 350px;
@@ -156,34 +161,35 @@ $(function() {
 <article class="article">
   <!--<h2>Arwin Chan // blog</h2>-->
   <p style="max-width:600px;"><h2 style="color:red;">COGNITIVE SCIENCE</h2><h3><a href="https://www-01.ibm.com/ibm/cas/cascon/archives/cascon2016.pdf" target="_blank">ArchiGen: A Conceptual Form Design Tool Using an Evolutionary Computing Approach</a></h3><h4><span style="color:red;">Arwin Chan, Farhana H. Zulkernine&emsp;</span><a href="https://www-01.ibm.com/ibm/cas/cascon/archives/cascon2016.pdf" target="_blank">IBM CASCON 2016</a></h4></p>
-  <p><img src="./archigen.jpg" alt="archigen" style="max-width:600px;"></p>
-  <p><b>ABSTRACT</b></p>
+  <figure>
+    <img src="./archigen.jpg" alt="archigen" style="max-width:90%;">
+    <figcaption>ArchiGen1 renderings at fitness levels 400, 200, and optimal (from left).</figcaption>
+  </figure>
+  <p><br/><b>ABSTRACT</b></p>
   <p style="max-width:600px;">Computer aided design (CAD), the use of computer systems for design and documentation, is prevalent in industrial and architectural design, but largely features passive software to follow user interaction. In the past decade, there have been multiple efforts in implementing multi-objective optimization algorithms and machine learning for data analytics in the area of computational optimization of building designs. This research initially explored the technical review of presented designs, and subsequently began to explore the creation of novel forms based on design constraints in addition to parameter optimization. Most notably in the conceptualization phase of the process, the designer is largely unassisted as current existing CAD software focuses on the modeling and basic structural analysis of already created designs. In this position paper, we propose a conceptual framework to leverage computer-assisted creativity in building and form design using evolutionary algorithms, complimented with a comprehensive review of the approaches of other research. We present the preliminary results of our rudimentary implementation of ArchiGen (Architectural Generator), a tool for assisting designers in the conceptualization of a design by presenting alternative forms based on design constraints. ArchiGen uses Genetic Algorithms (GA) to create alternative designs of a pillar-pod-antenna structured observation tower as a case study and explores the potential of combining optimal and sub-optimal solutions based on the specified design constraints.</p>
   <p style="margin:0px"><b>AUTHORS</b></p>
   <div class="floating-box">
-    <p>Arwin Chan</br>School of Computing</br>Queen’s University</br>Kingston, ON, Canada K7L 2N8</br>(416) 655 1649</br>arwin.chan@queensu.ca</p>
+    <p>Arwin Chan<br />School of Computing<br />Queen’s University<br />Kingston, ON, Canada K7L 2N8<br />(416) 655 1649<br />arwin.chan@queensu.ca</p>
   </div>
   <div class="floating-box">
-    <p>Farhana H. Zulkernine</br>School of Computing</br>Queen’s University</br>Kingston, ON, Canada K7L 2N8</br>(613) 533 6426</br>farhana@cs.queensu.ca</p>
+    <p>Farhana H. Zulkernine<br />School of Computing<br />Queen’s University<br />Kingston, ON, Canada K7L 2N8<br />(613) 533 6426<br />farhana@cs.queensu.ca</p>
   </div>
-  <!--
   <p style="margin:0px"><b>REFERENCES</b></p>
   <p style="max-width:600px;">[1] Feng, C. M., & Lin, J. J. (1999). Using a genetic algorithm to generate alternative sketch maps for urban planning. Computers, Environment and Urban Systems, 23(2), 91-108.
-</br>[2] Hsiao, S. W., & Tsai, H. C. (2005). Applying a hybrid approach based on fuzzy neural network and genetic algorithm to product form design. International Journal of Industrial Ergonomics, 35(5), 411-428.
-</br>[3] Turrin, M., von Buelow, P., & Stouffs, R. (2011). Design explorations of performance driven geometry in architectural design using parametric modeling and genetic algorithms. Advanced Engineering Informatics, 25(4), 656-675.
-</br>[4] Krish, S. (2011). A practical generative design method. Computer-Aided Design, 43(1), 88-100.
-</br>[5] Lin, J. J. (2003). Constructing an intelligent conceptual design system using genetic algorithm. Journal of materials processing technology, 140(1), 95-99.
-</br>[6] Machairas, V., Tsangrassoulis, A., & Axarli, K. (2014). Algorithms for optimization of building design: A review. Renewable and Sustainable Energy Reviews, 31, 101-112.
-</br>[7] Magnier, L., & Haghighat, F. (2010). Multiobjective optimization of building design using TRNSYS simulations, genetic algorithm, and Artificial Neural Network. Building and Environment, 45(3), 739-746.
-</br>[8] Miles, J. C., Sisk, G. M., & Moore, C. J. (2001). The conceptual design of commercial buildings using a genetic algorithm. Computers & Structures, 79(17), 1583-1592.
-</br>[9] Rakha, T., & Nassar, K. (2011). Genetic algorithms for ceiling form optimization in response to daylight levels. Renewable energy, 36(9), 2348-2356.
-</br>[10] Tsai, H. C., Hsiao, S. W., & Hung, F. K. (2006). An image evaluation approach for parameter-based product form and color design. Computer-Aided Design, 38(2), 157-171.
-</br>[11] Tuhus-Dubrow, D., & Krarti, M. (2010). Genetic-algorithm based approach to optimize building envelope design for residential buildings. Building and environment, 45(7), 1574- 1581.
-</br>[12] Wang, W., Zmeureanu, R., & Rivard, H. (2005). Applying multi-objective genetic algorithms in green building design optimization. Building and environment, 40(11), 1512-1525.
-</br>[13] Yildiz, A. R. (2013). Comparison of evolutionary-based optimization algorithms for structural design optimization. Engineering applications of artificial intelligence, 26(1), 327-333.
-</br>[14] Yu, W., Li, B., Jia, H., Zhang, M., & Wang, D. (2015). Application of multi-objective genetic algorithm to optimize energy efficiency and thermal comfort in building
+<br />[2] Hsiao, S. W., & Tsai, H. C. (2005). Applying a hybrid approach based on fuzzy neural network and genetic algorithm to product form design. International Journal of Industrial Ergonomics, 35(5), 411-428.
+<br />[3] Turrin, M., von Buelow, P., & Stouffs, R. (2011). Design explorations of performance driven geometry in architectural design using parametric modeling and genetic algorithms. Advanced Engineering Informatics, 25(4), 656-675.
+<br />[4] Krish, S. (2011). A practical generative design method. Computer-Aided Design, 43(1), 88-100.
+<br />[5] Lin, J. J. (2003). Constructing an intelligent conceptual design system using genetic algorithm. Journal of materials processing technology, 140(1), 95-99.
+<br />[6] Machairas, V., Tsangrassoulis, A., & Axarli, K. (2014). Algorithms for optimization of building design: A review. Renewable and Sustainable Energy Reviews, 31, 101-112.
+<br />[7] Magnier, L., & Haghighat, F. (2010). Multiobjective optimization of building design using TRNSYS simulations, genetic algorithm, and Artificial Neural Network. Building and Environment, 45(3), 739-746.
+<br />[8] Miles, J. C., Sisk, G. M., & Moore, C. J. (2001). The conceptual design of commercial buildings using a genetic algorithm. Computers & Structures, 79(17), 1583-1592.
+<br />[9] Rakha, T., & Nassar, K. (2011). Genetic algorithms for ceiling form optimization in response to daylight levels. Renewable energy, 36(9), 2348-2356.
+<br />[10] Tsai, H. C., Hsiao, S. W., & Hung, F. K. (2006). An image evaluation approach for parameter-based product form and color design. Computer-Aided Design, 38(2), 157-171.
+<br />[11] Tuhus-Dubrow, D., & Krarti, M. (2010). Genetic-algorithm based approach to optimize building envelope design for residential buildings. Building and environment, 45(7), 1574- 1581.
+<br />[12] Wang, W., Zmeureanu, R., & Rivard, H. (2005). Applying multi-objective genetic algorithms in green building design optimization. Building and environment, 40(11), 1512-1525.
+<br />[13] Yildiz, A. R. (2013). Comparison of evolutionary-based optimization algorithms for structural design optimization. Engineering applications of artificial intelligence, 26(1), 327-333.
+<br />[14] Yu, W., Li, B., Jia, H., Zhang, M., & Wang, D. (2015). Application of multi-objective genetic algorithm to optimize energy efficiency and thermal comfort in building
 design. Energy and Buildings, 88, 135-143.</p>
--->
 </article>
 
 <footer class="footer">&copy; 2017 Arwin Chan</footer>
