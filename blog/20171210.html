@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="pragma" content="no-cache" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>arwinchan//blog</title>
+  <link rel="icon" href="./icon.png">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+<style> 
+header {
+  height: 70px;
+}
+a {
+  text-decoration: none;
+  color:black;
+}
+a:hover {
+  text-decoration: underline;
+}
+p {
+  max-width:600px;
+  font-size: 20px;
+}
+h1 {
+  box-shadow: 3px 3px black;
+  text-align: left; 
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 50px;
+  padding: 5px;
+}
+h1:hover {
+  background-color: lime;
+  cursor: pointer;
+  box-shadow: 5px 5px black;
+  transition: background-color .5s ease-out, box-shadow .5s ease-out;
+}
+h2 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color:red;
+  padding-bottom: 0px;
+}
+h3 {
+  margin: 0px;
+  font-family: Garamond, serif;
+  font-size: 42px;
+  color:black;
+}
+h4 {
+  margin-top: 5px;
+  margin-bottom: 50px;
+  font-size: 18px;
+}
+body {
+  background-color: white;
+  opacity: 1;
+  transition: 1.5s opacity;
+}
+body.fade-out {
+  opacity: 0;
+  transition: 1s opacity;
+}
+figcaption {
+  margin-top: 0px;
+  font-family: Helvetica, Arial, sans-serif;
+  color:black;
+  font-size: 12px;
+}
+.floating-box {
+  margin-top: 0px;
+  min-width: 350px;
+  display: inline-block;
+
+}
+.flex-container {
+  max-width:1000px;
+  margin: auto;
+  display: -webkit-flex;
+  display: flex;  
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  text-align: center;
+}
+.flex-container > * {
+  padding: 15px;
+  -webkit-flex: 1 100%;
+  flex: 1 100%;
+}
+.nav ul {
+  transform: translateY(20%);
+  font-family: Times New Roman, serif;
+  font-size: 32px;
+  color:black;
+  list-style-type: none;
+  padding: 0;
+}
+.nav ul a {
+  text-decoration: none;
+  font-family: Times New Roman, serif;
+  color:black;
+}
+.nav ul a:hover {
+  text-decoration: underline;
+}
+.footer {
+  max-width:1000px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 10px;
+}
+@media all and (min-width: 700px) {
+  .nav {
+    text-align:left;
+    -webkit-flex: 1 0px;
+    flex:1 0px;
+    -webkit-order:1;
+    order:1;
+  }
+  .article {
+    text-align:left;
+    -webkit-flex:5 0px;
+    flex:5 0px;
+    -webkit-order:2;
+    order:2;
+  }
+  footer {
+    -webkit-order:3;
+    order:3;
+  }
+}
+</style>
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>document.body.className += ' fade-out';</script>
+<script>
+$(function() {
+    $('body').removeClass('fade-out');
+});
+</script>
+<div class="flex-container">
+<header>
+  <h1>
+    <a href="../" style="text-decoration: none; color:white;">a.</a>
+  </h1>
+</header>
+
+<nav class="nav">
+<ul>
+  <li><a href="/CV">CV</a></li>
+  <li><a href="/projects">projects</a></li>
+  <li><a href="/blog">blog</a></li>
+</ul>
+</nav>
+
+<article class="article">
+  <!--<h2>Arwin Chan // blog</h2>-->
+  <p>
+    <h2 style="color:red;">BOOK REVIEW</h2>
+    <h3>Catcher in the Wry: On Renata Adler's <i>Speedboat</i></h3>
+    <h4>
+      <span style="color:red;">Arwin Chan</span> December 10, 2017</h4>
+  </p>
+  <figure>
+    <img src="./adler.jpg" alt="adler" style="max-width:90%;">
+    <figcaption><i>Photo by Richard Avedon.</i></figcaption>
+  </figure>
+  <p style="max-width:400px; text-align: center; padding: 0px 100px;"><i>&ldquo;I know exactly what you mean,&rdquo; said the lady critic, who had been trying to find her way into the conversation somehow.</i></p>
+  <p>Has modern life really changed all that much? Sure, from a micro perspective, it seems more rapid than ever. Let me call an Uber; the president just started an international crisis with a tweet. Updates come as soon as they&rsquo;re sent and become queued down your push notifications. With all this at immediate attention, it becomes easy to forget the truths that have held over time, the ground we&rsquo;ve covered, the counterculture that&rsquo;s been established<sup>1</sup>. But Renata Adler&rsquo;s 1976 novel <i>Speedboat</i> touched moments that still resonate well today&mdash;a vivid portrait of urban America brilliantly rendered into prose.</p>
+  <p>The book follows the perspective of journalist Jen Fenn, as she navigates through cocktail parties, interviews, transit and her apartment block. The first thing you&rsquo;ll notice is that there&rsquo;s no real plot; while some chapters and excerpts carry on longer and more linearly<sup>2</sup>, short paragraphs are interspersed throughout and break up the narrative. But this is not disorienting, rather, it feels like a highlight reel of Fenn&rsquo;s mind, observing, as one writer<sup>3</sup> puts it, &ldquo;in that limpid, discarnate New Yorker style&mdash;as if the writer&rsquo;s brains have been preserved in a mason jar, with a single watchful orb of an eyeball floatingly attached.&rdquo;</p>
+  <p>Others<sup>4</sup> have described the work as dreamlike, but I find it compares more to entries pulled from a journal, or discoveries from the cutting room floor, compiled<sup>5</sup>. These moments, too periphery to pull into a traditional narrative, still come together to form a poignant portrait of the world around Fenn. It&rsquo;s undoubtedly a reason why it reads so well under a contemporary lens, considering the fragmented nature of our online posts, that join the feeds we scroll through.</p>
+  <p>And then there&rsquo;s the moments themselves:</p>
+  <p style="max-width:400px; text-align: center; padding: 0px 100px;"><i>The host, for some reason, was taking Instamatic pictures of his guests. It was not clear whether he was doing this in order to be able to show, at some future time, that there had been this gathering in his house. Or whether he thought of pictures in some voodoo sense. Or whether he found it difficult to talk. Or whether he was bored.</i></p>
+  <p>That quote stood out as particularity relevant, devices considered, but they all seem to call towards the sort of awkward dread that comes with navigating metropolitan life. Children&rsquo;s personalities clashing in a compulsory ballet class, being stuck alone with a bus driver who&rsquo;s reciting bible verses. The moments spoke of the 70&rsquo;s itself, hungover from the ripe counterculture of the decade prior<sup>6</sup>, watching as everyone scrambled to reorient. But while writers like Thompson tackled the era with a drug-fueled chase into oblivion<sup>7</sup>, Adler observed nonchalantly from a distance.</p>
+  <p>Which brings me to the point of just how<i>cool</i>Renata Adler seems. She&rsquo;s probably the most eloquent and overqualified<sup>8</sup> writer I&rsquo;ve come across; <i>Speedboat</i> reads like the older sibling who&rsquo;s gone and spent the last year doing the thing that you just discovered was the thing to do. She picks up on moments with a sharpness that&rsquo;s sobering to read. She&rsquo;s unrelentingly critical, and even spends a few paragraphs dissecting her coworkers&rsquo; vernacular. Reflection, garnished with dry wit.</p>
+  <p style="max-width:400px; text-align: center; padding: 0px 100px;"><i>&ldquo;Nerve-shattering,&rdquo; &ldquo;eye-popping,&rdquo; &ldquo;bone-crushing&rdquo;&mdash;the responsive critic was a crushed, impaled, electrocuted man. &ldquo;Searing&rdquo; was lukewarm.</i></p>
+  <p>A final takeaway; while its fragmented storyline would classify it as experimental fiction, it is not particularly inaccessible or pretentious. The issue I have with a lot of experimental work from the 60&rsquo;s to 80&rsquo;s is that it ends up mocking the reader more than show the absurdity it&rsquo;s describing, &ldquo;like, how completely <i>banal</i> of you to expect that<sup>9</sup>, here&rsquo;s some metafiction to wrap your head around&rdquo;. But <i>Speedboat</i> doesn&rsquo;t put you down, and the point isn&rsquo;t to show off how capable the writer is. It&rsquo;s as funny as it is breath-taking, and it&rsquo;s also the first novel from one of the most interesting voices I&rsquo;ve read of late. If there&rsquo;s any doubt left, just pick up a copy and let the first paragraph sweep you off your feet.</p>
+  <p>&ndash; Arwin</p>
+  <br />
+  <p><sup>1</sup> &ldquo;Skateboarders are old,&rdquo; I discussed with one of the managers at the office.<br /> <sup>2</sup> <i>Islands</i> felt the most cohesive, though certainly not the strongest.<br /> <sup>3</sup> Parker, J. &ldquo;Renata Adler: Troll or Treasure?&rdquo; <em>The Atlantic</em>. May 2015 Issue.<br /> <sup>4</sup> O&rsquo;Rouke, M. &ldquo;Welcome Back, Renata Adler.&rdquo; <em>New Yorker</em>. March 11, 2013. <br /> <sup>5</sup> It sort of reminds me of the collage-style documentary <em>Cameraperson</em>, but with more substance and published four decades prior.<br /> <sup>6</sup> Trebay, G. Afterword for <em>Speedboat.</em><br /> <sup>7</sup> Though <em>Fear and Loathing</em> has its own place of significance for me.<br /> <sup>8</sup> B.A. (Bryn Mawr), M.A. (Harvard), D.d&rsquo;E.S (Sorbonne), J.D. (Yale). Thought you had a nice GPA? <em>Sucker</em>.<br /> <sup>9</sup> Paraphrased from Wallace&rsquo;s point on irony, see <em>E Unibus Pluram: Television and U.S. Fiction.</em></p>
+  </div>
+</article>
+
+<footer class="footer">&copy; 2017 Arwin Chan</footer>
+</div>
+
+</body>
+</html>
