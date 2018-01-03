@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="pragma" content="no-cache" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Front Pages of the Queen's Journal</title>
+  <link rel="icon" href="./icon.png">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+<style> 
+header {
+  height: 70px;
+}
+a {
+  text-decoration: none;
+  color:black;
+}
+a:hover {
+  text-decoration: underline;
+}
+p {
+  font-size: 20px;
+  color: black;
+}
+h1 {
+  box-shadow: 3px 3px black;
+  text-align: left; 
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 50px;
+  padding: 5px;
+}
+h1:hover {
+  background-color: lime;
+  cursor: pointer;
+  box-shadow: 5px 5px;
+  transition: background-color .5s ease-out, box-shadow .5s ease-out;
+}
+h2 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color:red;
+  padding-bottom: 0px;
+}
+h3 {
+  margin: 0px;
+  font-family: Garamond, serif;
+  font-size: 42px;
+  color:black;
+}
+h4 {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  color:black;
+}
+body {
+  opacity: 1;
+  transition: 1.5s opacity;
+  background-color: white;
+}
+body.fade-out {
+  opacity: 0;
+  transition: 1s opacity;
+}
+figcaption {
+  margin-top: 0px;
+  font-family: Helvetica, Arial, sans-serif;
+  color:black;
+  font-size: 12px;
+}
+.floating-box {
+  margin-top: 0px;
+  min-width: 350px;
+  display: inline-block;
+
+}
+.flex-container {
+  max-width:1000px;
+  margin: auto;
+  display: -webkit-flex;
+  display: flex;  
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  text-align: center;
+}
+.flex-container > * {
+  padding: 15px;
+  -webkit-flex: 1 100%;
+  flex: 1 100%;
+}
+.nav ul {
+  transform: translateY(20%);
+  font-family: Times New Roman, serif;
+  font-size: 32px;
+  color:black;
+  list-style-type: none;
+  padding: 0;
+}
+.nav ul a {
+  text-decoration: none;
+  font-family: Times New Roman, serif;
+  color:black;
+}
+.nav ul a:hover {
+  text-decoration: underline;
+}
+.footer {
+  max-width:1000px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  color:black;
+  font-size: 10px;
+}
+@media all and (min-width: 700px) {
+  .nav {
+    text-align:left;
+    -webkit-flex: 1 0px;
+    flex:1 0px;
+    -webkit-order:1;
+    order:1;
+  }
+  .article {
+    text-align:left;
+    -webkit-flex:5 0px;
+    flex:5 0px;
+    -webkit-order:2;
+    order:2;
+  }
+  footer {
+    -webkit-order:3;
+    order:3;
+  }
+}
+</style>
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>document.body.className += ' fade-out';</script>
+<script>
+$(function() {
+    $('body').removeClass('fade-out');
+});
+</script>
+<div class="flex-container">
+<header>
+  <h1>
+    <a href="../" style="text-decoration: none; color:white;">a.</a>
+  </h1>
+</header>
+
+<nav class="nav">
+<ul>
+  <li><a href="/CV">CV</a></li>
+  <li><a href="/projects">projects</a></li>
+  <li><a href="/blog">blog</a></li>
+</ul>
+</nav>
+
+<article class="article">
+  <!--<h2>Arwin Chan // blog</h2>-->
+  <p style="max-width:600px;">
+    <h2>
+      <a href="http://www.queensjournal.ca" target="_blank" style="color:blue;">THE QUEEN'S JOURNAL</a>
+    </h2>
+    <h3><a href="https://arwinchan.wixsite.com/profile/design" target="_blank">Redesigning a Newspaper</a>
+    </h3>
+    <h4>
+      <span style="color:blue;">Arwin Chan&emsp;</span>Volume 143</h4>
+  </p>
+  <p style="max-width:700px;">As Production Manager of the <i>Queen’s Journal</i>, my first initiative was to redesign the print edition of our newspaper. One of the major shifts was a greater emphasis on front pages designs, with more striking visuals and typography.</p>
+  <figure>
+    <img src="./qjstacks.jpg" alt="qjstacks" style="max-width:90%;">
+    <figcaption>Stacks of <i>the Journal</i>, volume 142 and 143.</figcaption>
+  </figure>
+</article>
+
+<footer class="footer">&copy; 2017 Arwin Chan</footer>
+</div>
+
+</body>
+</html>
