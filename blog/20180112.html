@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="pragma" content="no-cache" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Who Will Survive in Toronto</title>
+  <link rel="icon" href="./icon.png">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+<style> 
+header {
+  height: 70px;
+}
+a {
+  text-decoration: none;
+  color:black;
+}
+a:hover {
+  text-decoration: underline;
+}
+p {
+  max-width:600px;
+  font-size: 20px;
+}
+h1 {
+  box-shadow: 3px 3px black;
+  text-align: left; 
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 50px;
+  padding: 5px;
+}
+h1:hover {
+  background-color: lime;
+  cursor: pointer;
+  box-shadow: 5px 5px black;
+  transition: background-color .5s ease-out, box-shadow .5s ease-out;
+}
+h2 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color:red;
+  padding-bottom: 0px;
+}
+h3 {
+  margin: 0px;
+  font-family: Garamond, serif;
+  font-size: 42px;
+  color:black;
+}
+h4 {
+  margin-top: 5px;
+  margin-bottom: 50px;
+  font-size: 18px;
+}
+body {
+  background-color: white;
+  opacity: 1;
+  transition: 1.5s opacity;
+}
+body.fade-out {
+  opacity: 0;
+  transition: 1s opacity;
+}
+figcaption {
+  margin-top: 0px;
+  font-family: Helvetica, Arial, sans-serif;
+  color:black;
+  font-size: 12px;
+}
+.floating-box {
+  margin-top: 0px;
+  min-width: 350px;
+  display: inline-block;
+
+}
+.flex-container {
+  max-width:1000px;
+  margin: auto;
+  display: -webkit-flex;
+  display: flex;  
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  text-align: center;
+}
+.flex-container > * {
+  padding: 15px;
+  -webkit-flex: 1 100%;
+  flex: 1 100%;
+}
+.nav ul {
+  transform: translateY(20%);
+  font-family: Times New Roman, serif;
+  font-size: 32px;
+  color:black;
+  list-style-type: none;
+  padding: 0;
+}
+.nav ul a {
+  text-decoration: none;
+  font-family: Times New Roman, serif;
+  color:black;
+}
+.nav ul a:hover {
+  text-decoration: underline;
+}
+.footer {
+  max-width:1000px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 10px;
+}
+@media all and (min-width: 700px) {
+  .nav {
+    text-align:left;
+    -webkit-flex: 1 0px;
+    flex:1 0px;
+    -webkit-order:1;
+    order:1;
+  }
+  .article {
+    text-align:left;
+    -webkit-flex:5 0px;
+    flex:5 0px;
+    -webkit-order:2;
+    order:2;
+  }
+  footer {
+    -webkit-order:3;
+    order:3;
+  }
+}
+</style>
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>document.body.className += ' fade-out';</script>
+<script>
+$(function() {
+    $('body').removeClass('fade-out');
+});
+</script>
+<div class="flex-container">
+<header>
+  <h1>
+    <a href="../" style="text-decoration: none; color:white;">a.</a>
+  </h1>
+</header>
+
+<nav class="nav">
+<ul>
+  <li><a href="/CV">CV</a></li>
+  <li><a href="/projects">projects</a></li>
+  <li><a href="/blog">blog</a></li>
+</ul>
+</nav>
+
+<article class="article">
+  <!--<h2>Arwin Chan // blog</h2>-->
+  <p>
+    <h2 style="color:red;">HOUSING</h2>
+    <h3>Who Will Survive in Toronto</h3>
+    <h4>
+      <span style="color:red;">Arwin Chan&emsp;</span>January 12, 2018</h4>
+  </p>
+  <figure>
+    <img src="./stjames.jpg" alt="stjamess" style="max-width:90%;">
+    <figcaption>A view from St. James Town.<i>Via the Wellseley Institute.</i></figcaption>
+  </figure>
+  <p>The past season has been particularly traumatic for Toronto apartment hunters, speaking from both personal experience and distressed news headlines<sup>1</sup>. Rent hikes and increased demand have brought potential tenants swarming around looking for a reasonable place to live, only to be faced with a bleak options and fierce competition.
+  </p>
+  <p>Having gone through two searches in the past year, my enthusiasm quickly caved into the realization that there were issues with even getting noticed. Almost every place I looked at had a sizable line, even when segmented out into time slots. If you saw a good posting appear, better reach out immediately, others have already queued up. If you weren’t prepared to take it on the spot, supporting documents at hand, consider yourself out of the running. Being vastly overqualified<sup>1</sup> seemed to dictate the new norm, and a collective distress hung on throughout my weeks of searching. Rent has substantially inflated, options dwindled, and now landlords had a huge advantage over prospective tenants.
+  </p>
+  <p>We’ve been seeing this trend ever since city centres became desirable places to live again. Decreased commute times, better access to cultural spaces, and a liberalized idea of community have all contributed to a bygone era of suburban flight. With the rapid ascension of Toronto’s international status, it’s not the most surprising news. But I wonder what the future holds for Toronto’s neighbourhoods, and their tenants being spread thin.
+  </p>
+  <p>Part of the issue appears to be an underdeveloped selection of medium density rentals. For in-demand neighbourhoods such as Trinity-Bellwoods and Palmerston-Little Italy, the main streets mostly feature two or three story apartments, which transition directly into semi-detached housing on the side streets. While they feature those beautiful Victorian-era houses define the residential architecture of the city, this density has led to the already limited housing being segmented and rented out, putting even rudimentary basement spaces up for a premium. For ownership, these homes now climb comfortably up the seven-figure range, at the very least for the plot of land itself.
+  </p>
+  <p>In the mid-20<sup>th</sup> century, these were contrasted with the creation of high rise apartment complexes. St. James Town makes for a prime example&mdash;Toronto faced its first boom in the 60's and 70’s, and as a reflection of the urban planning philosophy at the time, these developments were made as a residence for the growing middle-class of young professionals. 
+  </p>
+  <p>In retrospect, there’s a sense that these developers hadn’t considered the long-term implications of these properties. With a focus on suburbanization, historic city blocks were demolished to make way for highways and parking lots, and over time the desirability of these apartments declined as tenants moved out to the suburbs and building maintenance was neglected<sup>4</sup>. Today St. James Town serves primarily as a low-income immigrant settlement, a jumping off point for newcomers looking to establish themselves in the city.
+  </p>
+  <p>Which brings us over to the condo boom. With house prices downtown and in the inner-suburbs soaring, and suburban sprawl stretching farther out and becoming less desirable, the alternative appears to be looking into owning a downtown condo. The main incentive is driven by the move to financialization and a stigmatized association to renting. Developers have caught on, and aided by deregulations in the 90’s<sup>5</sup>, large projects such as CityPlace have gone up to attract those with the resources to begin investing in property. It’s the new solution for young professionals—new, efficient, and a good fit for those beginning their career.
+  </p>
+  <p>Sound familiar? Well observers<sup>6</sup> have compared these new condos to the high-rises since their inception<sup>7</sup>. Because the priority of financialization is maximizing short-term shareholder value, both developers and investors value efficiency over community. It’s clear that tenants consider these properties a temporary home, as they ascend up the social ladder. And with the developers’ return fulfilled, where is the incentive to uphold a level of maintenance? These complexes never had community as a primary goal, so it’s difficult to maintain a neighbourhood identity that was never really there to begin with. 
+  </p>
+  <p>So the problem with our current developments isn’t only that they’re displacing the members of our downtown community, or diluting the neighbourhood they’re constructing on. They appear to be indifferent to the long-term growth of the city itself. These complexes aren’t a flourishing hub, but rather a rest stop for the young and ambitious who, like the buildings they reside in, seem interested in nothing more than the fast track to financial opportunity.
+  </p>
+  <p>Neighbourhoods change, people move in, and on. Places become historic or lose their authenticity. In a way it’s always been like this; we have to keep growing to remain relevant, both individually and as a community. But as landlords and investors gain more leverage, as markets move faster, I worry that the neighbourhoods themselves will begin to embody the business schemes they’ve become increasingly more presumptuous of.
+  </p>
+
+  <p>&ndash; Arwin</p>
+  <br />
+  <p style="font-size: 16px;"><sup>1</sup> Even the more reputable sources veered towards sensationalism, e.g. “Toronto's rental market 'has gone bonkers'”, in an October article from <i>The Globe and Mail</i>.<br /> 
+  <sup>2</sup> When my summer sublet had their rent jacked up, initiating an open house, the place went to a group of Ph.D. candidates who showed up early with all documents at the ready. And they say academic inflation is a myth.<br /> 
+  <sup>3</sup> During the Anglo centric shift from Montreal as Canada’s flagship city.<br /> 
+  <sup>4</sup> Zemlijc, L. “The World Within a Block: The Past and Future of St. James Town, Toronto.” <i>Lowest Rates</i>. April 7, 2014.<br /> 
+  <sup>5</sup> August, M., et al. “Gentrification, suburban decline, and the finacialization of multi-family rental housing: The case of Toronto.” <i>GeoForum</i>. May 27, 2017.<br /> 
+  <sup>6</sup> Very, E. “It’s going to be St. James Town all over again.” <i>Eric Very</i>. August 27, 2014.<br /> 
+  <sup>7</sup> Tossell, I. “High stakes.” <i>The Globe and Mail</i>. September 1, 2007.</p>
+  </div>
+</article>
+
+<footer class="footer">&copy; 2018 Arwin Chan</footer>
+</div>
+
+</body>
+</html>
