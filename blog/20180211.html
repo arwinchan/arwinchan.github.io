@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="pragma" content="no-cache" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>A Case for Vertical Videos</title>
+  <link rel="icon" href="./icon.png">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+<style> 
+header {
+  height: 70px;
+}
+a {
+  text-decoration: none;
+  color:black;
+}
+a:hover {
+  text-decoration: underline;
+}
+p {
+  max-width:600px;
+  font-size: 20px;
+}
+h1 {
+  box-shadow: 3px 3px black;
+  text-align: left; 
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 50px;
+  padding: 5px;
+}
+h1:hover {
+  background-color: lime;
+  cursor: pointer;
+  box-shadow: 5px 5px black;
+  transition: background-color .5s ease-out, box-shadow .5s ease-out;
+}
+h2 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color:red;
+  padding-bottom: 0px;
+}
+h3 {
+  margin: 0px;
+  font-family: Garamond, serif;
+  font-size: 42px;
+  color:black;
+}
+h4 {
+  margin-top: 5px;
+  margin-bottom: 50px;
+  font-size: 18px;
+}
+body {
+  background-color: white;
+  opacity: 1;
+  transition: 1.5s opacity;
+}
+body.fade-out {
+  opacity: 0;
+  transition: 1s opacity;
+}
+figcaption {
+  margin-top: 0px;
+  font-family: Helvetica, Arial, sans-serif;
+  color:black;
+  font-size: 12px;
+}
+.floating-box {
+  margin-top: 0px;
+  min-width: 350px;
+  display: inline-block;
+
+}
+.flex-container {
+  max-width:1000px;
+  margin: auto;
+  display: -webkit-flex;
+  display: flex;  
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  text-align: center;
+}
+.flex-container > * {
+  padding: 15px;
+  -webkit-flex: 1 100%;
+  flex: 1 100%;
+}
+.nav ul {
+  transform: translateY(20%);
+  font-family: Times New Roman, serif;
+  font-size: 32px;
+  color:black;
+  list-style-type: none;
+  padding: 0;
+}
+.nav ul a {
+  text-decoration: none;
+  font-family: Times New Roman, serif;
+  color:black;
+}
+.nav ul a:hover {
+  text-decoration: underline;
+}
+.footer {
+  max-width:1000px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 10px;
+}
+@media all and (min-width: 700px) {
+  .nav {
+    text-align:left;
+    -webkit-flex: 1 0px;
+    flex:1 0px;
+    -webkit-order:1;
+    order:1;
+  }
+  .article {
+    text-align:left;
+    -webkit-flex:5 0px;
+    flex:5 0px;
+    -webkit-order:2;
+    order:2;
+  }
+  footer {
+    -webkit-order:3;
+    order:3;
+  }
+}
+</style>
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>document.body.className += ' fade-out';</script>
+<script>
+$(function() {
+    $('body').removeClass('fade-out');
+});
+</script>
+<div class="flex-container">
+<header>
+  <h1>
+    <a href="../" style="text-decoration: none; color:white;">a.</a>
+  </h1>
+</header>
+
+<nav class="nav">
+<ul>
+  <li><a href="/CV">CV</a></li>
+  <li><a href="/projects">projects</a></li>
+  <li><a href="/blog">blog</a></li>
+</ul>
+</nav>
+
+<article class="article">
+  <!--<h2>Arwin Chan // blog</h2>-->
+  <p>
+    <h2 style="color:red;">FILM</h2>
+    <h3>A Case for Vertical Video</h3>
+    <h4>
+      <span style="color:red;">Arwin Chan&emsp;</span>February 11, 2018</h4>
+  </p>
+  <figure>
+    <img src="./arabia.jpg" alt="Lawrence of Arabia" style="max-width:80%;">
+    <figcaption>The 1962 epic was shot in Super Panavision 70.&emsp;<i>via No Film School.</i></figcaption>
+  </figure>
+  <p>Back in December, I finally saw <i>Lawrence of Arabia</i>. The Lightbox was screening it in its full 70mm, the larger projection letting viewers better take in the details of the cinematography, the story being told. The screening gave a pretty compelling case for why some older films felt slow watching them at home&mdash;scenes such as the desert crossings just don’t have the same effect on a television set, let alone a personal device.
+  </p>
+  <p>Another part of this experience was how wide the aspect ratio was. Viewed on a large screen, it complemented our field of vision, panoramically immersing viewers into a scene. It's this effect that spawned the association between wider aspect ratios and cinematic pedigree; even in home entertainment, high definition went wider than standard definition, and newer digital films still went so far as to letterbox the 70mm ratio in post-production. Widescreen ratios have a sacred bond with video footage&mdash;until smartphones began dismantling the convention.
+  </p>
+  <p>Phones are meant to be used vertically, so it became more natural to shoot videos in this format as well. But in the early days of the smartphone, these videos had no place outside of the device. Whenever they were uploaded online, they needed to be converted back into a horizontal orientation. This meant choosing between extensive cropping, or having an unsightly amount of negative space. It became so notorious that in 2012, <a href="https://youtu.be/Bt9zSfinwFA">a video</a> was posted to address the issue, coining the term Vertical Video Syndrome. I remember watching that video in my high school’s film class, thinking how amateurish it was to do such a thing. Why would you relegate footage to a phone? What would you do with it?
+  </p>
+  <p>Well in the five years since, smartphones went from struggling to record HD video, to generating and capturing augmented streams in real-time. The stigma must have begun to shift when Instagram came along; initially confined to a square crop, the images were meant to be seen on a feed, regardless of screen ratio. Then Snapchat arrived, first as privately sent images, before conceiving the idea of a Stories feed, both formatted to fill your phone’s screen with camera feed captures.
+  </p>
+  <p>Each transition has made the experience more seamless, so it was natural to phase out the requirement for rotating their phones. When the mobile experience becomes the priority, horizontal videos are no longer appropriate. App developments have enriched our already primary device for communication, so it was inevitable that videos become integral to this process. Is social media amateurish? Pretty much by definition.
+  </p>
+  <p>I think the cinephile in us had underestimated how commonplace video would be come, how once demanding editing techniques have become little more than an afterthought. We remain fixated on the bond between videos and the theatre, especially since television sets can feel like a personal screening, and fail to consider mobile devices as having a separate relationship with the footage.
+  </p>
+  <p>Other mediums were never so restricted with aspect ratios. Paintings and photography prints&mdash;while having default sizes&mdash;could be rotated and refitted to the creator’s liking. But motion pictures faced technical restrictions, first by how film reels were exposed, then in the spaces where these films were projected. It wasn’t until digital videos came along that aspect ratios could be truly flexible; and it's an adjustment period we’re finally getting over.
+  </p>
+  <p>In printing, the horizontal format is labeled as “landscape”, the vertical “portrait.” While the theatre outstands in immersing viewers into a story, mobile footage aims to connect them. <i>2001: A Space Odyssey</i>&mdash;another epic from that decade&mdash;featured characters using vertical screens during video calls, which never came to fruition in the year it tried to prophesize. Over a decade later, the technology has finally caught up. 
+  </p>
+  <p>Lastly, I don’t think the two formats need to be distinct from one another. Mobile apps have proven how dynamic video recordings can be, and its flexibility will only increase as they're rolled out. For example, 360 videos have been growing in the past few years, and though they still have fairly niche applications, the technology is available in the consumer realm. The difference is that it’s not an ergonomic mishap, it assumes a certain level of technical comprehension. And if there’s any takeaway from vertical videos, it’s that usability will prevail.
+  </p>
+
+  <p>&ndash; Arwin</p>
+  <br />
+  </div>
+</article>
+
+<footer class="footer">&copy; 2018 Arwin Chan</footer>
+</div>
+
+</body>
+</html>
