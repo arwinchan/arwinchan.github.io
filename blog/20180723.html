@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="pragma" content="no-cache" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Book Review – The Third Person</title>
+  <link rel="icon" href="./icon.png">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+<style> 
+header {
+  height: 70px;
+}
+a {
+  text-decoration: none;
+  color:black;
+}
+a:hover {
+  text-decoration: underline;
+}
+p {
+  max-width:600px;
+  font-size: 20px;
+}
+h1 {
+  box-shadow: 3px 3px black;
+  text-align: left; 
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 50px;
+  padding: 5px;
+}
+h1:hover {
+  background-color: lime;
+  cursor: pointer;
+  box-shadow: 5px 5px black;
+  transition: background-color .5s ease-out, box-shadow .5s ease-out;
+}
+h2 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color:red;
+  padding-bottom: 0px;
+}
+h3 {
+  margin: 0px;
+  font-family: Garamond, serif;
+  font-size: 42px;
+  color:black;
+}
+h4 {
+  margin-top: 5px;
+  margin-bottom: 50px;
+  font-size: 18px;
+}
+body {
+  background-color: white;
+  opacity: 1;
+  transition: 1.5s opacity;
+}
+body.fade-out {
+  opacity: 0;
+  transition: 1s opacity;
+}
+figcaption {
+  margin-top: 0px;
+  font-family: Helvetica, Arial, sans-serif;
+  color:black;
+  font-size: 12px;
+}
+.floating-box {
+  margin-top: 0px;
+  min-width: 350px;
+  display: inline-block;
+
+}
+.flex-container {
+  max-width:1000px;
+  margin: auto;
+  display: -webkit-flex;
+  display: flex;  
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  text-align: center;
+}
+.flex-container > * {
+  padding: 15px;
+  -webkit-flex: 1 100%;
+  flex: 1 100%;
+}
+.nav ul {
+  transform: translateY(20%);
+  font-family: Times New Roman, serif;
+  font-size: 32px;
+  color:black;
+  list-style-type: none;
+  padding: 0;
+}
+.nav ul a {
+  text-decoration: none;
+  font-family: Times New Roman, serif;
+  color:black;
+}
+.nav ul a:hover {
+  text-decoration: underline;
+}
+.footer {
+  max-width:1000px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 10px;
+}
+@media all and (min-width: 700px) {
+  .nav {
+    text-align:left;
+    -webkit-flex: 1 0px;
+    flex:1 0px;
+    -webkit-order:1;
+    order:1;
+  }
+  .article {
+    text-align:left;
+    -webkit-flex:5 0px;
+    flex:5 0px;
+    -webkit-order:2;
+    order:2;
+  }
+  footer {
+    -webkit-order:3;
+    order:3;
+  }
+}
+</style>
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>document.body.className += ' fade-out';</script>
+<script>
+$(function() {
+    $('body').removeClass('fade-out');
+});
+</script>
+<div class="flex-container">
+<header>
+  <h1>
+    <a href="../" style="text-decoration: none; color:white;">a.</a>
+  </h1>
+</header>
+
+<nav class="nav">
+<ul>
+  <li><a href="/CV">CV</a></li>
+  <li><a href="/projects">projects</a></li>
+  <li><a href="/blog">blog</a></li>
+</ul>
+</nav>
+
+<article class="article">
+  <!--<h2>Arwin Chan // blog</h2>-->
+  <p>
+    <h2 style="color:red;">BOOK REVIEW</h2>
+    <h3>Emily Anglin's <i>The Third Person</i></h3>
+    <h4>
+      <span style="color:red;">Arwin Chan&emsp;</span>July 23, 2018</h4>
+  </p>
+  <figure>
+    <img src="./anglinthirdperson.jpg" alt="thirdperson" style="display: block; max-height:400px; margin-left:auto;margin-right:auto;">
+  </figure>
+  <p>I wrote <i><a href="https://brokenpencil.com/reviews/anwins-the-third-person-explores-the-dynamics-and-mysteries-of-adulthood/" target="_blank" style="color:darkred;">a review</a></i> of Emily Anglin's debut short story collection <i>The Third Person</i>, a look into the boundaries and ambiguities of navigating young adulthood.
+  </p>
+  <p>Find it in the latest issue of <i><a href="https://brokenpencil.com/issue-cover/issue-80/" target="_blank" style="color:darkred;">Broken Pencil</a></i>.
+  </p>
+  <p>&ndash; Arwin</p>
+  <br />
+  </div>
+</article>
+
+<footer class="footer">&copy; 2018 Arwin Chan</footer>
+</div>
+
+</body>
+</html>
