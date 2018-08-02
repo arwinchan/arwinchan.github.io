@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="pragma" content="no-cache" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>The Disruptors</title>
+  <link rel="icon" href="./icon.png">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+<style> 
+header {
+  height: 70px;
+}
+a {
+  text-decoration: none;
+  color:blue;
+}
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+p {
+  max-width:600px;
+  font-size: 20px;
+}
+h1 {
+  box-shadow: 3px 3px black;
+  text-align: left; 
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 50px;
+  padding: 5px;
+}
+h1:hover {
+  background-color: lime;
+  cursor: pointer;
+  box-shadow: 5px 5px black;
+  transition: background-color .5s ease-out, box-shadow .5s ease-out;
+}
+h2 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color:red;
+  padding-bottom: 0px;
+}
+h3 {
+  margin: 0px;
+  font-family: Garamond, serif;
+  font-size: 42px;
+  color:black;
+}
+h4 {
+  margin-top: 5px;
+  margin-bottom: 50px;
+  font-size: 18px;
+}
+body {
+  background-color: white;
+  opacity: 1;
+  transition: 1.5s opacity;
+}
+body.fade-out {
+  opacity: 0;
+  transition: 1s opacity;
+}
+figcaption {
+  margin-top: 0px;
+  font-family: Helvetica, Arial, sans-serif;
+  color:black;
+  font-size: 12px;
+}
+.floating-box {
+  margin-top: 0px;
+  min-width: 350px;
+  display: inline-block;
+
+}
+.flex-container {
+  max-width:1000px;
+  margin: auto;
+  display: -webkit-flex;
+  display: flex;  
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  text-align: center;
+}
+.flex-container > * {
+  padding: 15px;
+  -webkit-flex: 1 100%;
+  flex: 1 100%;
+}
+.nav ul {
+  transform: translateY(20%);
+  font-family: Times New Roman, serif;
+  font-size: 32px;
+  color:black;
+  list-style-type: none;
+  padding: 0;
+}
+.nav ul a {
+  text-decoration: none;
+  font-family: Times New Roman, serif;
+  color:black;
+}
+.nav ul a:hover {
+  text-decoration: underline;
+}
+.footer {
+  max-width:1000px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 10px;
+}
+@media all and (min-width: 700px) {
+  .nav {
+    text-align:left;
+    -webkit-flex: 1 0px;
+    flex:1 0px;
+    -webkit-order:1;
+    order:1;
+  }
+  .article {
+    text-align:left;
+    -webkit-flex:5 0px;
+    flex:5 0px;
+    -webkit-order:2;
+    order:2;
+  }
+  footer {
+    -webkit-order:3;
+    order:3;
+  }
+}
+</style>
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>document.body.className += ' fade-out';</script>
+<script>
+$(function() {
+    $('body').removeClass('fade-out');
+});
+</script>
+<div class="flex-container">
+<header>
+  <h1>
+    <a href="../" style="text-decoration: none; color:white;">a.</a>
+  </h1>
+</header>
+
+<nav class="nav">
+<ul>
+  <li><a href="/CV">CV</a></li>
+  <li><a href="/projects">projects</a></li>
+  <li><a href="/blog">blog</a></li>
+</ul>
+</nav>
+
+<article class="article">
+  <!--<h2>Arwin Chan // blog</h2>-->
+  <p>
+    <h2 style="color:red;">TECHNOLOGY</h2>
+    <h3>The Disruptors</h3>
+    <h4>
+      <span style="color:red;">Arwin Chan&emsp;</span>August 2, 2018</h4>
+  </p>
+  <figure>
+    <img src="./disruptors.jpg" alt="disruptors" style="max-width:90%;">
+    <figcaption>Some thoughts on the state of tech. <i>via Kevin Wong on Flickr.</i></figcaption>
+  </figure>
+  <p>I imagine that the startup culture is as fervent as ever, the New Californian Dream of striking digital gold. The legend that birthed it&mdash;a suburban garage, a college dorm room, the lone creator who jumped the rat race and recarved the landscape of technology, remains in our conscience. The last generation may have settled back towards corporate familiarity, but new energy and ideas still sprint through the Valley’s veins. Names continue to emerge and become household, a Next Big Thing always taking shape on the horizon.
+  </p>
+  <p>Perhaps it’s unfair to restrict this era as analogous to a gold rush. Despite short lifespans and a myriad fallen pursuits, the trend<a href="#footnotes"><sup>1</sup></a> appears to show that the otherwise volatile environment has been growing pretty steadily in the last decade. If anything, the opportunity for success feels more abundant than it had been since the recession ended, and unlike the material limitations of the gold rush, the potential in new technologies seems to expand faster than we can grasp it.
+  </p>
+  <p>A lot of this can be credited to the speed at which new concepts are introduced into our consciousness&mdash;last year it was machine learning, this year blockchain. By the time the novelty and market projections die down, a new buzzword has recaptured our imagination, and the hype continues onward. It’s a perpetual cycle of expectations that we more often than not get blindly caught up in. Take a look at how cryptocurrencies have dominated discussions in the past year: spawned from the gone-rich early investors of Bitcoin, decentralized currencies have proliferated<a href="#footnotes"><sup>2</sup></a> and become more of an exploited investment opportunity than having any practical long term viability. And in this era where ideas are created on laptops and spread at an instant, there becomes a tendency for them to propagate well before their implications are properly understood. There hangs that impulse to jump in where gold was struck, before the opportunity passes.
+  </p>
+  <p>Of course, disruptive technologies aren’t inherently malicious, and often hails from well-considered and engaging research. Taking a step back from the chaos can reveal how much progress has been made&mdash;just have a look at the success artificial neural networks. A few years ago, they were no more than a dismissed computational theory, an approach that had little practical&mdash;or really, even theoretical&mdash;application. But now, due to the availability of processing power, neural nets have been successfully applied to image recognition, abstract decision making, and a whole slew of other nonlinear processes that traditional computation would have struggled with. It was the necessary stepping stone to make technologies such as self-driving cars gain momentum, and has now been integrated into everyday use, from facial recognition to targeted advertising. But in the same light that blockchain is currently experiencing, there was a wave of high expectations on the potential of neural nets, and treated the approach&mdash;and machine learning in general&mdash;as the big break that would finally put us in contact to the ever elusive hope for pure artificial intelligence. Though our programs have still yet to produce any sentience or comprehension in any metaphysical sense<a href="#footnotes"><sup>3</sup></a>, the foundation has been laid for machines to begin taking over more cognitively demanding tasks.
+  </p>
+  <p>While these networks are fine-tuned and expanded, the app world has now matured beyond novelty widgets and begun to overhaul established industries to its core, the most significant being the move towards peer-to-peer sharing that was previously isolated to digital media. It’s been an ongoing battle of Ubers vs. taxis and Airbnbs vs. hotels for a few years now, having brought previously personal transactions to a corporate scale, and gutting their licenced predecessors. It’s left regulatory bodies to figure out how to maintain enforcement and protect consumers, without stunting innovative growth. And while various jurisdictions have outright banned these platforms<a href="#footnotes"><sup>4</sup></a>, it’s becoming clear that these new approaches are asserting their dominance&mdash;the consumer’s interest in convenience and efficiency outweighing the potential risks of negligence by the platform’s overseers.
+  </p>
+  <p>Since regulators continue to struggle with grasping and keeping up with these advancements, developers are left with an open field to build on. On one hand, it’s what has allowed such rapid improvements to occur, but this has been frequently marred by an active disregard for existing infrastructure. The bike sharing phenomenon, for example, has shifted from being a once publicly subsidized service, to becoming a privatized app-based system. But because this new dockless approach no longer requires the infrastructure permits for bike terminals, it’s left companies&mdash;and subsequently their customers&mdash;free to introduce distribute the products around as they please. In China, the anticipatory speculation has resulted in a massive surge of bike share oversupply, which has led to streets overflowing<a href="#footnotes"><sup>5</sup></a> with excess bicycles. It is difficult to describe the absurdity of the scene before them; as a country that has seen unprecedented growth, particularly in the tech sector, the typical Chinese family has, in the span of a generation, gone from treating a bicycle as a status symbol, to passing thousands of neglected ones every day. Corporate self-interest moves on, leaving behind the byproduct of another market bubble.
+  </p>
+  <p>This continuous energy of speculative market investments and technocratic promises has conditioned consumers to readily accept new platforms without a critical lens on their implications. As tech companies develop better ways to collect and interpret information on its users, the protection of their data is becoming the most pressing of these concerns. Users often forget how much we willingly hand over to the digital realm, and this past year’s Cambridge Analytica scandal revealed such power in exploiting collected data, taking many for a rude awakening. It’s led policymakers and consumers alike to reconsider how personal information should be released and used, and puts into question the dependability of self-regulation in the technology sector<a href="#footnotes"><sup>6</sup></a>. It’s up to both parties to ensure that public interests not get lost as new platforms are developed, but it’s also a notion that the industry’s corporate incentives regularly conflict with. 
+  </p>
+  <p>Whether new technologies end up either benefiting society collectively or increasing disparity will be some of the most significant crossroads we will have to face in the coming decades. Many of these issues are already pressing: the recent normalizing of political disinformation has shown how effectively social media can be used to manipulate public opinion<a href="#footnotes"><sup>7</sup></a>, this despite how these platforms have provided individuals with more opportunities to access and join discussions than ever before. With automation, whether more intelligent programs will be implemented to resolve economic issues, or intensify them, will depend on how we remain considerate of our shifting resources&mdash;as developers, regulators, and consumers. Perhaps a better life is just a technocrats’ invisible hand away; regardless, the cogs of innovation will keep on turning, the disruptor’s gaze relentlessly looking towards the digital frontier.
+  </p>
+
+  <p>&ndash; Arwin</p>
+  <br />
+  <p style="font-size: 16px;" id="footnotes" name="foornotes">
+  <sup>1</sup> <a href="https://www.bloomberg.com/graphics/startup-barometer/" target="_blank">Bloomberg U.S. Startups Barometer</a>, emphasizing venture capital activity.<br /> 
+  <sup>2</sup> See cryptocurrency market capitalization tracker <a href="https://coinmarketcap.com/" target="_blank">CoinMarketCap</a>.<br /> 
+  <sup>3</sup> It's interesting to see how the definition of an 'intelligent' machine has changed ove the decades&mdash;doesn't it seem to keep stretching farther out beyond each computational advancement? See <a href="https://www.newyorker.com/business/currency/the-hype-and-hope-of-artificial-intelligence/" target="_blank">The Hype&mdash;and Hope&mdash;of Artificial Intelligence</a>.<br /> 
+  <sup>4</sup> See <a href="https://www.telegraph.co.uk/travel/news/where-is-airbnb-banned-illegal/" target="_blank">How the world is going to war with Airbnb</a> and <a href="https://www.telegraph.co.uk/travel/news/where-is-uber-banned/" target="_blank">Uber</a>.<br /> 
+  <sup>5</sup> <a href="https://www.theatlantic.com/photo/2018/03/bike-share-oversupply-in-china-huge-piles-of-abandoned-and-broken-bicycles/556268/" target="_blank">A photo essay</a> on the phenomenon.<br /> 
+  <sup>6</sup> <a href="https://www.nytimes.com/2018/04/10/business/dealbook/mark-zuckerberg-congress-hearing.html" target="_blank">Some takeaways</a> from the Zuckerberg congressional hearing.<br /> 
+  <sup>7</sup> <a href="https://www.theguardian.com/technology/2018/jul/27/fake-news-inquiry-data-misuse-deomcracy-at-risk-mps-conclude/" target="_blank">UK parliamentary dissidence</a> on the topic of fake news.</p>
+  </div>
+</article>
+
+<footer class="footer">&copy; 2018 Arwin Chan</footer>
+</div>
+
+</body>
+</html>
