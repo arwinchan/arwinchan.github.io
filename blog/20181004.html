@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="pragma" content="no-cache" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>What's Mine is Mine</title>
+  <link rel="icon" href="./icon.png">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+<style> 
+header {
+  height: 70px;
+}
+a {
+  text-decoration: none;
+  color:black;
+}
+a:hover {
+  text-decoration: underline;
+}
+p {
+  max-width:600px;
+  font-size: 20px;
+}
+h1 {
+  box-shadow: 3px 3px black;
+  text-align: left; 
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 50px;
+  padding: 5px;
+}
+h1:hover {
+  background-color: lime;
+  cursor: pointer;
+  box-shadow: 5px 5px black;
+  transition: background-color .5s ease-out, box-shadow .5s ease-out;
+}
+h2 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color:red;
+  padding-bottom: 0px;
+}
+h3 {
+  margin: 0px;
+  font-family: Garamond, serif;
+  font-size: 42px;
+  color:black;
+}
+h4 {
+  margin-top: 5px;
+  margin-bottom: 50px;
+  font-size: 18px;
+}
+body {
+  background-color: white;
+  opacity: 1;
+  transition: 1.5s opacity;
+}
+body.fade-out {
+  opacity: 0;
+  transition: 1s opacity;
+}
+figcaption {
+  margin-top: 0px;
+  font-family: Helvetica, Arial, sans-serif;
+  color:black;
+  font-size: 12px;
+}
+.floating-box {
+  margin-top: 0px;
+  min-width: 350px;
+  display: inline-block;
+
+}
+.flex-container {
+  max-width:1000px;
+  margin: auto;
+  display: -webkit-flex;
+  display: flex;  
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  text-align: center;
+}
+.flex-container > * {
+  padding: 15px;
+  -webkit-flex: 1 100%;
+  flex: 1 100%;
+}
+.nav ul {
+  transform: translateY(20%);
+  font-family: Times New Roman, serif;
+  font-size: 32px;
+  color:black;
+  list-style-type: none;
+  padding: 0;
+}
+.nav ul a {
+  text-decoration: none;
+  font-family: Times New Roman, serif;
+  color:black;
+}
+.nav ul a:hover {
+  text-decoration: underline;
+}
+.footer {
+  max-width:1000px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 10px;
+}
+@media all and (min-width: 700px) {
+  .nav {
+    text-align:left;
+    -webkit-flex: 1 0px;
+    flex:1 0px;
+    -webkit-order:1;
+    order:1;
+  }
+  .article {
+    text-align:left;
+    -webkit-flex:5 0px;
+    flex:5 0px;
+    -webkit-order:2;
+    order:2;
+  }
+  footer {
+    -webkit-order:3;
+    order:3;
+  }
+}
+</style>
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>document.body.className += ' fade-out';</script>
+<script>
+$(function() {
+    $('body').removeClass('fade-out');
+});
+</script>
+<div class="flex-container">
+<header>
+  <h1>
+    <a href="../" style="text-decoration: none; color:white;">a.</a>
+  </h1>
+</header>
+
+<nav class="nav">
+<ul>
+  <li><a href="/CV">CV</a></li>
+  <li><a href="/projects">projects</a></li>
+  <li><a href="/blog">blog</a></li>
+</ul>
+</nav>
+
+<article class="article">
+  <!--<h2>Arwin Chan // blog</h2>-->
+  <p>
+    <h2 style="color:red;">LEGAL AFFAIRS</h2>
+    <h3>What's Mine is Mine</h3>
+    <h4>
+      <span style="color:red;">Arwin Chan&emsp;</span>October 4, 2018</h4>
+  </p>
+  <figure>
+    <img src="./eucopyright.png" alt="eucopyright" style="max-width:90%;">
+    <figcaption>The results of European Parliament vote. <i>Via the European Union 2018.</i></figcaption>
+  </figure>
+  <p><i>This was originally written as part of a policy analysis for POLSCI 701.</i></p>
+  <p>On September 12<sup>th</sup> 2018, the European Parliament voted to adopt the proposed Directive on Copyright in the Digital Single Market, which aims to bring the EU’s copyright law in line with some of the evolutions in the way content is shared and expressed through online platforms (Schranz, 2018). The parliament’s decision was surrounded by criticism—particularly over Articles 11 and 13—which critics respectively called the “link tax,” for providing publishers with a right to request a royalties-style fee from social media platforms whenever their stories were shared, and the “meme ban,” after it was suggested that these platforms implement an automated filtering process whenever copyrighted materials were uploaded (Vincent & Brandom, 2018), potentially censoring out the referential nature of such internet phenomena.
+  </p>
+  <p>With an ambiguous technical solution in these articles, the directive takes copyright law into a precarious situation between holding tech companies accountable for users against content creators, and suppressing the openness that has allowed internet engagement to flourish. Additionally, it sets a precedence as other jurisdictions reconsider their own legislation on digital copyright regulations. As Tabish and Tribe (2018) point out, the Canadian government is currently reviewing the country’s Copyright Act, and has a history of taking EU policy developments into consideration. With both parliaments attempting to bring legislation up to speed with current technologies, contextualizing these decisions against a historical lens reveals a long battle between the interests of copyright consumers and their owners. Updates in copyright law have been a continually adapting process that has brought us to this crossroad, a position that could significantly impact the course of communication in the digital era.
+  </p>
+  <p>Despite the recent introduction of social media platforms, the regulation of new distribution technologies run at in the core of copyright law. Some of the earliest developments in copyright law, such as the Licensing Act of 1662 and the Statute of Anne, was enacted to address the new cultural dynamics created by the printing press (Association of Research Libraries, 2018). With its introduction, Gutenberg’s printing press greatly reduced the time it took for written works to be reproduced, and provided an unprecedented opportunity for information to be distributed to the masses. By the time it had gained momentum in England, the monarchy sought to regulate ownership of production by granting certain printers “letters patents”, i.e. monopolies, which quickly became an exploited system of self-interests from both producers and the state. Because of this, the 1662 Act lapsed thirty-three years later and parliament enacted the Statute of Anne in 1710, which not only attributed ownership back to the author, but limited the term for which the copyright remained enforceable, letting works enter the public domain after fourteen years (Marion, 2015, p. 43). By providing content creators with the legal support to reap the financial benefits of their work, without giving them an indefinite control of their ideas, the Statute of Anne laid the ground work for modern copyright law.
+  </p>
+  <p>The beginnings of Canadian copyright law were moulded by its colonial history, and began enacting legislation through a rudimentary blend between British law, its pre-Confederation statues, and the international Berne Convention agreement. In its infancy, and largely due to Canada’s dependence through imperial control, much of the creative content in this era was undermined by political strife and piracy (Nadel, 2015, p. 30). British authorities had repeatedly rejected attempts at an autonomous act, and it wasn’t until the establishment of the Copyright Act in 1921 that Canada had a federally independent copyright act in place. Today, it remains as the primary piece of copyright legislation in the country; while it is largely based on the U.K. Copyright Act of 1911, it allowed for independent amendments and reform, and notably took on a copyright term of 50 years after the content creator’s death, in line with the 1911 act and the Berne Convention (McOrmond, 2011).
+  </p>
+  <p>But while Americans had initially approached copyright law as a nation of copyright consumers, the 20th century brought on a rapid increase in creative and technological output for the country, and legislators sought to protect these new creations, first by expanding protected mediums—paintings, motion pictures, music, and eventually computer programs—and by extending the term of copyright protection, first by meeting the fifty-after-death standard in 1976, then further extending it to seventy-after-death in 1998 (Marion, 2015, p. 45). America’s switch to becoming a dominant copyright exporter meant that its laws began to focus on creator interests over the public, leading to many of the corporate empires of the present day.
+  </p>
+  <p>To keep up with these advancements, Canadian legislators modernized the Copyright Act with two major phases of reform. The first phase began in 1988 with Bill C-60 and Bill C-88 in 1993, which addressed computer programs, clarified moral rights, and added retransmission rights for musical works (McOrmond, 2011). The second phase of copyright reform was ushered by Bill C-32 in 1997, establishing neighbouring rights and the private copying regime, which specified the definition for fair dealings with copyright exceptions. The latter phase was also heavily influenced by multilateral trade agreements, especially the North American Free Trade Agreement in 1994, which furthered retransmission rights and increased protection against importing infringing works, and the 1996 World Trade Organization’s Agreement Implementation Act, extending copyright protections across member states (Government of Canada, 2017, October 16).
+  </p>
+  <p>1996 also marked the establishment of the World International Property Organization’s Internet Treaties, an international response to expand copyright into the digital realm (Bannerman, 2011, p. 39). This was however met with dissent from the Canadian government, who took a protectionist stance in constructing copyright policy during the subsequent years. According to Murray (2004), policymakers were considering the new online methods of content dissemination primarily as market threats, which lead to more defensive legislation aiming to favour copyright owners over public interests. The results of this position manifested as the Bill C-11 in 2012, titled the Copyright Modernization Act, passed by the Conservative majority after several failed attempts prior attempts as a minority. In addition to officially ratifying the WIPO terms, Bill C-11 had built upon existing requirements of the treaties, creating technological access controls and extending authors’ and neighbouring rights, while also reworking the notions of fair dealings (O’Neil & Thomas, 2012). It was the long awaited legislation to bring Canada into the digital era, but at this ever-increasing pace of technological development, the policies in place had already begun to show its age. To address this, the Bill amended a requirement to review the Copyright Act every five years, which parliament commenced its inaugural and current in December 2017 (Government of Canada, 2017, December 14).
+  </p>
+  <p>Currently, Canada holds a fairly high standing for internet freedom. Freedom House’s analysis of the internet shows that the Canadian government shows a commitment to net neutrality, and fosters a diverse online environment. Despite having some legislation that advocated for more intrusive measures on user’s data, it generally does not generally block websites, and has worked to ensure that availability and ease of access to the internet is achieved (Freedom House, 2017). In fact, on October 2nd of this year, the Canadian Radio-television and Telecommunications Commission rejected a proposal sponsored by Bell Canada to implement a web-blocking system against piracy. It was step towards curbing the protectionist interests of ISPs, and a possible indicator of results to come from the Copyright Act review.
+  </p>
+  <p>The internet continues to become a more integral component of Canadian life; its users remain free to access an abundance of information, and are active contributors to the online community. While the Canadian government has been historically defensive when it comes to national intellectual property, it is now faced with an inherently international legislative issue. As these parliamentary reviews reach their final stages, policymakers should make note of both historical and international precedence, how public interests have evolved, and the importance of defending both authors and their consumers. This digital era brings no shortage of new ideas, but its growth could either flourish, or be smothered.
+  </p>
+  <p>&ndash; Arwin</p>
+  <br />
+  <p style="font-size: 16px;text-align: center;">
+  <strong>References</strong><br /></p>
+  <p style="font-size: 16px; padding-left: 22px; text-indent: -22px;">
+  Association of Research Libraries. (2018). <i>Copyright Timeline: A History of Copyright in the United States.</i> Retrieved from http://www.arl.org/</p>
+  <p style="font-size: 16px; padding-left: 22px; text-indent: -22px;">
+  Bannerman, S. (2011). Canadian copyright: history, change and potential. <i>Canadian Journal of Communication</i>, 36, 31-49.</p>
+  <p style="font-size: 16px; padding-left: 22px; text-indent: -22px;">
+  Freedom House. (2017). <i>Freedom on the Net 2017</i>. Retrieved from https://freedomhouse.org/></p>
+  <p style="font-size: 16px; padding-left: 22px; text-indent: -22px;">
+  Government of Canada. (2017, October 16). <i>History of Copyright in Canada</i>. Retrieved from https://www.canada.ca/</p>
+  <p style="font-size: 16px; padding-left: 22px; text-indent: -22px;">
+  Government of Canada. (2017, December 14). <i>Parliament to undertake review of the Copyright Act</i>. Retrieved from https://www.canada.ca/</p>
+  <p style="font-size: 16px; padding-left: 22px; text-indent: -22px;">
+  Marion, J. (2015, Fall). Copyright law then and now. <i>San Francisco Attorney Magazine, 41(3), 42-46.</p>
+  <p style="font-size: 16px; padding-left: 22px; text-indent: -22px;">
+  McOrmond, R. (2011, March 25). Chronology of Canadian copyright law. <i>Digital Copyright Canada</i>. Retrieved from http://www.digital-copyright.ca/</p>
+  <p style="font-size: 16px; padding-left: 22px; text-indent: -22px;">
+  Murray, L. (2004, October 4). Protecting ourselves to death: Canada, copyright, and the internet. <i>First Monday</i>, 9(10). Retrieved from https://journals.uic.edu/</p>
+  <p style="font-size: 16px; padding-left: 22px; text-indent: -22px;">
+  Nadel, I. (2015, Spring). Copyright, empire and the politics of print: the case of Canada. <i>Topia</i>, 33, 29-51.</p>
+  <p style="font-size: 16px; padding-left: 22px; text-indent: -22px;">
+  O’Neil, A., & Thomas, A. (2012, November 20) Bill C-11 - Canada’s "New and Improved" Copyright Act. <i>Fasken</i>. Retrieved from http://www.mondaq.com/</p>
+  <p style="font-size: 16px; padding-left: 22px; text-indent: -22px;">
+  Schranz, J. (2018, September 12). Parliament adopts its position on digital copyright rules.<i>European Parliament</i>. Retrieved from http://www.europarl.europa.eu</p>
+  <p style="font-size: 16px; padding-left: 22px; text-indent: -22px;">
+  MTabish, J., & Tribe, L. (2018, September 19). The spectre of bad internet laws in Europe should be a warning shot for Canadians. <i>Maclean’s</i>. Retrieved from https://www.macleans.ca/</p>
+  <p style="font-size: 16px; padding-left: 22px; text-indent: -22px;">
+  Vincent, J., & Brandom, R. (2018, September 13). Everything you need to know about Europe’s new copyright directive. <i>The Verge</i>. Retrieved from https://www.theverge.com/</p>
+
+  </div>
+</article>
+
+<footer class="footer">&copy; 2018 Arwin Chan</footer>
+</div>
+
+</body>
+</html>
