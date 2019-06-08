@@ -1,2 +1,2 @@
 # arwinchan
-Welcome to my profile! ***It's in dev***
+Welcome to my profile!
